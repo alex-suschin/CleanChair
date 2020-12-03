@@ -11,7 +11,117 @@ html(lang="ru")
     body
         block header
             include header
-        block content
+        .top-wrap(style="background-image:url(img/top-wrap-bg.jpg)")
+            .dots
+            .container
+                .title Выведем пятна и удалим запахи<br> с вашей мебели <span>за 60 минут</span>
+                .desc С помощью профессиональной<br>  гипоаллергенной косметики
+                a.btn-yellow(href="#") Вызвать специалиста
+            .sofa
+                .cat
+        
+        .why-our
+            .container
+                .title Почему <span>1200 домохозяек</span> выбрали CLEANCHAIR? 
+                .why-items
+                    .why-item
+                        .why-item--img <img src="img/why-1.png" alt="" />
+                        .why-item--title Очищаем 98% пятен!
+                        .why-item--desc Ваша мебель будет похожа новую 
+                    .why-item
+                        .why-item--img <img src="img/why-2.png" alt="" />
+                        .why-item--title Опытные мастера
+                        .why-item--desc Сертифицированные мастера, выполнят чистку вашей мебели по высшему разряду
+                    .why-item
+                        .why-item--img <img src="img/why-3.png" alt="" />
+                        .why-item--title Двойная гарантия
+                        .why-item--desc 100% сохранность текстильной и кожаной обивки мягкой мебели  
+                    .why-item
+                        .why-item--img <img src="img/why-4.png" alt="" />
+                        .why-item--title Бесплатный выезд
+                        .why-item--desc Сохраните ваши деньги.<br> Мастер приедет к Вам по адресу бесплатно 
+        .slider-wrap
+            .container
+                .dots
+                .title Посмотрите на <span>результаты нашей работы</span>
+                .slider-worls-box
+                    .swiper-container.swiper-container-works
+                        .swiper-wrapper.swiper-wrapper-works
+                            .swiper-slide(style="background-image:url(img/sl-1.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-2.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-3.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-1.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-2.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-3.jpg)")
+                    .swiper-button-prev.swiper-button-prev-works
+                    .swiper-button-next.swiper-button-next-works
+                    
+                    .swiper-container.works-thumbs
+                        .swiper-wrapper
+                            .swiper-slide(style="background-image:url(img/sl-1.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-2.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-3.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-1.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-2.jpg)")
+                            .swiper-slide(style="background-image:url(img/sl-3.jpg)")
+
+        .price
+            .price-bg(style="background-image:url(img/price-bg.jpg)")
+            .container
+                .title Приблизительные <span>цены на чистку</span>
+                .desc Оставьте заявку и мы рассчитаем точную<br> стоимость чистки вашей мебели
+                .price-bnts
+                    a(href="javascript:void(0)" data-switch="price-1" class="btn-sofa active") <span>Мягкая мебель</span>
+                    a(href="javascript:void(0)" data-switch="price-2" class="btn-kov") <span>Ковры</span>
+                .price-box
+                    .price-box-elem(style="background-image:url(img/sofa-elem.png)" id="price-1")
+                        .price-box-elem--content
+                            .price-table
+                                .price-table-item
+                                    span Кресло
+                                    b от 600 руб
+                                .price-table-item
+                                    span Двухместный диван
+                                    b от 1300 руб 
+                                .price-table-item
+                                    span Трехместный диван
+                                    b от 1800 руб 
+                                .price-table-item
+                                    span Четырехместный диван
+                                    b от 1800 руб 
+                            a.btn-yellow(href="#") Вызвать специалиста
+
+                    .price-box-elem(style="background-image:url(img/kov-elem.png); display:none;" id="price-2")
+                        .price-box-elem--content
+                            .price-table
+                                .price-table-item
+                                    span Маленький
+                                    b от 300 руб
+                                .price-table-item
+                                    span Средний
+                                    b от 600 руб 
+                                .price-table-item
+                                    span Большой
+                                    b от 900 руб 
+                            a.btn-yellow(href="#") Вызвать специалиста
+
+        .sale
+            .dots
+            .sale-bg(style="background-image:url(img/sale-bg.jpg);")
+                .man <img src="img/man.png" alt="" />
+            .container
+                .title <span>Скидки</span> постоянным клиентам
+                .desc Дарим Вам скидку 10% на второй и последующие заказы
+                form(action="/" method="POST" class="form-sale")
+                    .title Оставьте заявку
+                    .desc Мы перезвоним Вам и сообщим<br> точную стоимость чистки мебели
+                    span
+
+
+
+
+
+
         block footer
             include footer
         block scripts

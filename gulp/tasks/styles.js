@@ -27,9 +27,7 @@ module.exports = function styles() {
         .pipe(cleanCSS({
             debug: true,
             compatibility: '*'
-        }, details => {
-            console.log(`${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`)
-        }))
+        }, ))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css'))
 }
