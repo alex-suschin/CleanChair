@@ -790,7 +790,7 @@ select {
 .rewiews {
     .dots {
         top: 232px;
-        left: 40px;
+        left: 31px;
         z-index: -1;
     }
 }
@@ -821,4 +821,118 @@ select {
 
 .rewiews-bg .swiper-button-next-rewiews {
     right: -88px;
+}
+
+.message {
+    position: absolute;
+    padding: 55px 0 56px 0;
+    background: #FFFFFF;
+    box-shadow: 5px 3px 33px #E0E0E0;
+    border-radius: 10px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #242424;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2px;
+    }
+}
+
+.message::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -33px;
+    bottom: 21px;
+    width: 74px;
+    height: 43px;
+    background: url(../img/polygon.svg) no-repeat center;
+    z-index: 0;
+}
+
+.message-1 {
+    left: 28px;
+    top: 43px;
+    max-width: 367px;
+    width: 100%;
+}
+
+.message-2 {
+    left: -24px;
+    bottom: 128px;
+    max-width: 331px;
+    width: 100%;
+}
+
+.rewiews {
+    margin-bottom: 416px;
+}
+
+.safe {
+    margin-bottom: 215px;
+    .title {
+        margin-bottom: 58px;
+    }
+}
+
+.safe-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 44px 43px 44px;
+    background: #FFFFFF;
+    box-shadow: 5px 3px 33px #E0E0E0;
+}
+
+.safe-box__left {
+    width: 47%;
+}
+
+.safe-box__right {
+    width: 53%;
+    .title {
+        font-weight: 500;
+        font-size: 21px;
+        text-align: left;
+        line-height: 27px;
+        color: #242424;
+        margin-bottom: 29px;
+    }
+}
+
+.safe-text {
+    position: relative;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #242424;
+    margin-bottom: 25px;
+    padding: 0 0 0 0;
+}
+
+.safe-text::before {
+    content: '';
+    display: block;
+    width: 19px;
+    height: 16px;
+    position: absolute;
+    left: -31px;
+    top: 3px;
+    background: url(../img/galka.svg) no-repeat left center;
+    background-size: cover;
+}
+
+.safe-partners {
+    max-width: 464px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    padding: 13px 0 13px 0;
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
 }
