@@ -25,7 +25,15 @@ $(document).ready(() => {
         thumbs: {
             swiper: worksThumbs
         }
-    })
+    });
+
+    const rewiews = new Swiper('.slider-reweiws', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.swiper-button-next-rewiews',
+            prevEl: '.swiper-button-prev-rewiews',
+        },
+    });
 
     $('.price-bnts a').click(function() {
         $('.price-bnts').find('.active').removeClass('active');

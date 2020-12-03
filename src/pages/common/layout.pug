@@ -115,7 +115,52 @@ html(lang="ru")
                 form(action="/" method="POST" class="form-sale")
                     .title Оставьте заявку
                     .desc Мы перезвоним Вам и сообщим<br> точную стоимость чистки мебели
-                    span
+                    span <input type="text" placeholder="Ваше имя" />
+                    span <input type="tel" placeholder="Телефон" />
+                    <button type="submit" class="btn-yellow">Вызвать специалиста</button>
+                    .agree Нажимая кнопку “Вызвать специалиста”, я даю<br> согласие на обработку персональных данных
+
+        .steps
+            .container
+                .dots
+                .row
+                    .col-xl-4
+                        .step-item <span>До вашей чистой мебели осталось<br> <b>5 простых шагов</b></span>
+                    .col-xl-4
+                        .step-item
+                            .step-item--img <img src="img/step-1.svg" />
+                            .step-item--title Скидка 10% на второй<br> и последующие заказы
+                    .col-xl-4
+                        .step-item
+                            .step-item--img <img src="img/step-2.svg" />
+                            .step-item--title Назначаем удобное<br> для Вас время
+                    .col-xl-4
+                        .step-item
+                            .step-item--img <img src="img/step-3.svg" />
+                            .step-item--title Мастер приезжает, консультирует и приступает к работе
+                    .col-xl-4
+                        .step-item
+                            .step-item--img <img src="img/step-4.svg" />
+                            .step-item--title По завершении чистки производит сушку изделия ( при необходимости)
+                    .col-xl-4
+                        .step-item
+                            .step-item--img <img src="img/step-5.svg" />
+                            .step-item--title Вы принимаете работу и идете хвастаться подругам!
+
+        .rewiews
+            .container
+                .dots
+                .title Посмотрите, что говорят<br> <span>хозяйки о нашей работе</span>
+                .rewiews-bg
+                    .slider-reweiws-box(style="background-image:url(img/phone-slider.png);") 
+                        .swiper-container.slider-reweiws
+                            .swiper-wrapper
+                                .swiper-slide(style="background-image:url(img/rew-1.jpg)")
+                                .swiper-slide(style="background-image:url(img/rew-1.jpg)")
+                                .swiper-slide(style="background-image:url(img/rew-1.jpg)")
+                    .swiper-button-prev.swiper-button-prev-rewiews
+                    .swiper-button-next.swiper-button-next-rewiews
+
 
 
 
