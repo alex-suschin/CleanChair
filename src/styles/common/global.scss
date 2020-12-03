@@ -280,6 +280,78 @@ select {
     z-index: 15;
 }
 
+.sofa-text {
+    position: absolute;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #242424;
+    b {
+        position: absolute;
+    }
+    i {
+        position: absolute;
+        display: block;
+        width: 31px;
+        height: 31px;
+        background: url(../img/dot.svg) no-repeat center;
+    }
+}
+
+.sofa-text-1 {
+    position: absolute;
+    top: 121px;
+    left: 504px;
+    i {
+        bottom: -74px;
+        left: -49px;
+    }
+    b {
+        background: url(../img/line-1.png) no-repeat center;
+        width: 204px;
+        height: 53px;
+        left: -34px;
+        top: 25px;
+        display: block;
+    }
+}
+
+.sofa-text-2 {
+    position: absolute;
+    top: 334px;
+    left: 174px;
+    i {
+        bottom: -119px;
+        left: 211px;
+    }
+    b {
+        background: url(../img/line-2.png) no-repeat center;
+        width: 232px;
+        height: 97px;
+        left: -6px;
+        top: 26px;
+        display: block;
+    }
+}
+
+.sofa-text-3 {
+    position: absolute;
+    top: 298px;
+    left: 739px;
+    i {
+        bottom: -82px;
+        left: 150px;
+    }
+    b {
+        background: url(../img/line-3.png) no-repeat center;
+        width: 171px;
+        height: 61px;
+        left: -4px;
+        top: 25px;
+        display: block;
+    }
+}
+
 .why-our {
     margin-bottom: 205px;
     .title {
