@@ -128,25 +128,30 @@ html(lang="ru")
                 .dots
                 .row
                     .col-xl-4
-                        .step-item <span>До вашей чистой мебели осталось<br> <b>5 простых шагов</b></span>
+                        .step-item <span>До вашей чистой мебели осталось<br> <b>5 простых шагов</b></span> 
                     .col-xl-4
                         .step-item
+                            <i>1</i>
                             .step-item--img <img src="img/step-1.svg" />
                             .step-item--title Скидка 10% на второй<br> и последующие заказы
                     .col-xl-4
                         .step-item
+                            <i>2</i>
                             .step-item--img <img src="img/step-2.svg" />
                             .step-item--title Назначаем удобное<br> для Вас время
                     .col-xl-4
                         .step-item
+                            <i>3</i>
                             .step-item--img <img src="img/step-3.svg" />
                             .step-item--title Мастер приезжает, консультирует и приступает к работе
                     .col-xl-4
                         .step-item
+                            <i>4</i>
                             .step-item--img <img src="img/step-4.svg" />
                             .step-item--title По завершении чистки производит сушку изделия ( при необходимости)
                     .col-xl-4
                         .step-item
+                            <i>5</i>
                             .step-item--img <img src="img/step-5.svg" />
                             .step-item--title Вы принимаете работу и идете хвастаться подругам!
 
@@ -183,8 +188,88 @@ html(lang="ru")
                             <img src="img/brand-4.png" alt="" />
 
         .info
+            .info-bg
             .container  
+                .dots
                 .title Почему мы не рекомендуем <span>чистить<br> изделие самостоятельно?</span>
+                .info-item
+                    <img class="arr-left" src="img/arr-left.png" alt="" />
+                    .info-item__img(style="background-image:url(img/info-sofa-1.png);")
+                    .info-item__content
+                        .title Грязь не только на поверхности
+                        p Нужно понимать, что загрязнения бывают не только видимыми (на поверхности) но те которые проникают внутрь изделия. 
+                        p Да, грязь растворится, пятна начинают исчезать, но на деле они проникают глубоко в наполнитель
+                .info-item.info-item-reverse
+                    <img class="arr-right" src="img/arr-right.png" alt="" />
+                     .info-item__content
+                        .title Появляются разводы
+                        p После высыхания в 90% случаях появляются грязные разводы еще большего размера, чем были. 
+
+                        p Только раньше это были просто следы грязи и пыли, то теперь к ним добавились высохшие остатки чудо-средства! 
+                    .info-item__img(style="background-image:url(img/info-sofa-2.png);")
+
+                .info-form
+                    .info-form__left
+                        <img src="img/info-form-img.jpg" alt="" />
+                    .info-form__right
+                        form(action="/" method="POST" class="form-info")
+                            .title Лучше доверьте нам, мы сэкономим вам<br> время, силы и деньги 
+                            .desc Оставьте заявку и мы перезвоним Вам<br> и сообщим точную стоимость чистки мебели
+                            span <input type="text" placeholder="Ваше имя" />
+                            span <input type="tel" placeholder="Телефон" />
+                            <button type="submit" class="btn-yellow">Вызвать специалиста</button>
+                            .agree Нажимая кнопку “Вызвать специалиста”, я даю<br> согласие на обработку персональных данных
+
+        .instrument
+            .instrument-bg(style="background-image:url(img/instrument-bg.jpg);")
+            .container
+                .title Используем только профессиональное<br> оборудование из <span>Италии, Германии и Франции</span>
+                .instrument-items
+                    <img src="img/instrument-1.png" alt="" />
+                    <img src="img/instrument-2.png" alt="" />
+                    <img src="img/instrument-3.png" alt="" />
+                    <img src="img/instrument-4.png" alt="" />
+                .devices
+                    .devices-items
+                        .devices-item
+                            .devices-item__left
+                                <img src="img/device-1.png" alt="" />
+                            .devices-item__right
+                                .title Моющий пылесос экстрактор<br> Santoemma Sabrina Maxi
+                                p Это профессиональная ручная машина для уборки ковровых покрытий и мягкой мебели. 
+                                p Оборудована мощной всасывающей турбиной, что позволяет собирать до 90% нанесенного раствора, сокращает время высыхания ковровых покрытий.
+                        .devices-item
+                            .devices-item__left
+                                <img src="img/device-2.png" alt="" />
+                            .devices-item__right
+                                .title Фен для сушки покрытий<br> Truvox Hybrid Blower 3400
+                                p Профессиональный фен-вентилятор,значительно сокращает время на высыхание коврового покрытия и мягкой мебели всех типов
+                        .devices-item
+                            .devices-item__left
+                                <img src="img/device-3.png" alt="" />
+                            .devices-item__right
+                                .title Орбитальная двухщеточная<br> машина Twinc TH-3500
+                                p Орбитальные движения щеток имитируют круговые движения руки оператора, интенсивно и в тоже время деликатно очищая любую поверхность
+
+        .contacts
+            .container
+                .title Остались <span>вопросы?</span>
+                .contacts-box
+                    .contacts-box__left
+                        .map#map
+                    .contacts-box__right
+                        form(action="/" method="POST" class="form-contacts")
+                            .title Оставьте заявку
+                            .desc Мы перезвоним Вам и сообщим<br> точную стоимость чистки мебели
+                            span <input type="text" placeholder="Ваше имя" />
+                            span <input type="tel" placeholder="Телефон" />
+                            <button type="submit" class="btn-yellow">Вызвать специалиста</button>
+                            .agree Нажимая кнопку “Вызвать специалиста”, я даю<br> согласие на обработку персональных данных
+                            .call-us
+                                b или позвоните нам
+                                a(href="tel:+71111111111") +7  111 111 11 11
+
+                         
 
 
 
