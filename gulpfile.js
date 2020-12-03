@@ -3,6 +3,7 @@ const gulp = require('gulp')
 const serve = require('./gulp/tasks/serve')
 const pug2html = require('./gulp/tasks/pug2html')
 const styles = require('./gulp/tasks/styles')
+const stylesVendor = require('./gulp/tasks/stylesVendor')
 const script = require('./gulp/tasks/script')
 const scriptVendor = require('./gulp/tasks/scriptVendor')
 const fonts = require('./gulp/tasks/fonts')
@@ -19,7 +20,7 @@ function setMode(isProduction = false) {
     }
 }
 
-const dev = gulp.parallel(pug2html, styles, script, scriptVendor, fonts, imageMinify, svgSprite)
+const dev = gulp.parallel(pug2html, styles, stylesVendor, script, scriptVendor, fonts, imageMinify, svgSprite)
 
 const build = gulp.series(clean, copyDependencies, dev)
 
