@@ -1,6 +1,20 @@
 // const { default: Swiper } = require("swiper")
 
 $(document).ready(() => {
+    AOS.init();
+
+    setTimeout(() => {
+        $('.sofa-text i').css('opacity', '1');
+    }, 300);
+
+    setTimeout(() => {
+        $('.sofa-text b').css('opacity', '1');
+    }, 600);
+
+    setTimeout(() => {
+        $('.sofa-text span').css('opacity', '1');
+    }, 900);
+
     jQuery("a.anchor").click(function() {
         elementClick = jQuery(this).attr("href")
         destination = jQuery(elementClick).offset().top;

@@ -4,5 +4,16 @@ footer.footer
             img(src='img/logo-footer.svg' alt="")
         a(href="#" class="policy") Политика конфиденциальности
         span Цены на сайте не являются публичной офертой
-        a.anchor(href="#")
+        a.anchor(href="#header")
     
+.modal.fade#modal(tabindex='-1' aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .modal-close(data-dismiss="modal")
+            form(action="/" method="POST" class="form-popup")
+                .title Оставьте заявку
+                .desc Мы перезвоним Вам и сообщим<br> точную стоимость чистки мебели
+                span <input type="text" placeholder="Ваше имя" />
+                span <input type="tel" placeholder="Телефон" />
+                <button type="submit" class="btn-yellow">Вызвать специалиста</button>
+                .agree Нажимая кнопку “Вызвать специалиста”, я даю<br> согласие на обработку персональных данных

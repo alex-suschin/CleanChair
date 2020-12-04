@@ -16,7 +16,7 @@ html(lang="ru")
             .container
                 .title Выведем пятна и удалим запахи<br> с вашей мебели <span>за 60 минут</span>
                 .desc С помощью профессиональной<br>  гипоаллергенной косметики
-                a.btn-yellow(href="#") Вызвать специалиста
+                a.btn-yellow(href="javascript: void(0);" data-toggle="modal" data-target="#modal") Вызвать специалиста
             .sofa
                 .cat
                 .sofa-text.sofa-text-1 <i></i> <span>Избавим от микробов</span> <b></b>
@@ -127,32 +127,32 @@ html(lang="ru")
             .container
                 .dots
                 .row
-                    .col-xl-4
-                        .step-item <span>До вашей чистой мебели осталось<br> <b>5 простых шагов</b></span> 
-                    .col-xl-4
-                        .step-item
+                    .col-xl-4.col-lg-4.col-md-6
+                        .step-item(data-aos="fade-up") <span>До вашей чистой мебели осталось<br> <b>5 простых шагов</b></span> 
+                    .col-xl-4.col-lg-4.col-md-6
+                        .step-item(data-aos="fade-up")
                             <i>1</i>
-                            .step-item--img <img src="img/step-1.svg" />
+                            .step-item--img <img src="img/step-1.svg" alt="" />
                             .step-item--title Скидка 10% на второй<br> и последующие заказы
-                    .col-xl-4
-                        .step-item
+                    .col-xl-4.col-lg-4.col-md-6
+                        .step-item(data-aos="fade-up")
                             <i>2</i>
-                            .step-item--img <img src="img/step-2.svg" />
+                            .step-item--img <img src="img/step-2.svg" alt="" />
                             .step-item--title Назначаем удобное<br> для Вас время
-                    .col-xl-4
-                        .step-item
+                    .col-xl-4.col-lg-4.col-md-6
+                        .step-item(data-aos="fade-up")
                             <i>3</i>
-                            .step-item--img <img src="img/step-3.svg" />
+                            .step-item--img <img src="img/step-3.svg" alt="" />
                             .step-item--title Мастер приезжает, консультирует и приступает к работе
-                    .col-xl-4
-                        .step-item
+                    .col-xl-4.col-lg-4.col-md-6
+                        .step-item(data-aos="fade-up")
                             <i>4</i>
-                            .step-item--img <img src="img/step-4.svg" />
+                            .step-item--img <img src="img/step-4.svg" alt="" />
                             .step-item--title По завершении чистки производит сушку изделия ( при необходимости)
-                    .col-xl-4
-                        .step-item
+                    .col-xl-4.col-lg-4.col-md-6
+                        .step-item(data-aos="fade-up")
                             <i>5</i>
-                            .step-item--img <img src="img/step-5.svg" />
+                            .step-item--img <img src="img/step-5.svg" alt="" />
                             .step-item--title Вы принимаете работу и идете хвастаться подругам!
 
         .rewiews
@@ -168,8 +168,8 @@ html(lang="ru")
                                 .swiper-slide(style="background-image:url(img/rew-1.jpg)")
                     .swiper-button-prev.swiper-button-prev-rewiews
                     .swiper-button-next.swiper-button-next-rewiews
-                    .message-1.message Вы можете написать им! <img src="img/smile.svg" alt="" />
-                    .message-2.message  И убедиться в качестве нашей чистки! <img src="img/smile2.svg" alt="" />
+                    .message-1.message(data-aos="zoom-in") Вы можете написать им! <img src="img/smile.svg" alt="" />
+                    .message-2.message(data-aos="zoom-in")  И убедиться в качестве нашей чистки! <img src="img/smile2.svg" alt="" />
 
         .safe
             .container
